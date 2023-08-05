@@ -1,15 +1,17 @@
-# speech_to_text_google
+# Speech To Text Google
 
-A new Flutter plugin project.
+This package is implemented to display the Google speech to text dialog. There is no need to get any
+permission from the user for this. This package is currently available on Android.
+![DemoAndroid](https://github.com/miladhf/speech_to_text_google/master/example/screenshots/example_android.gif)
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+### Example
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This example shows how to display a google speech to text dialog and get the result.
 
+```dart
+bool isServiceAvailable = await SpeechToTextGoogle.getInstance()
+                    .showGoogleDialog(onTextReceived: (data) {
+                });
+```
