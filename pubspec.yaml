@@ -1,4 +1,4 @@
-name: speech_to_text_google
+name: speech_to_text_google_dialog
 description: This package is implemented to display the Google speech to text dialog.
 version: 0.0.1
 issue_tracker: https://github.com/miladhf/speech_to_text_google/issues

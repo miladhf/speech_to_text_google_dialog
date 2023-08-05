@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:speech_to_text_google/speech_to_text_google.dart';
+import 'package:speech_to_text_google_dialog/speech_to_text_google.dart';
 
 void main() {
   runApp(const MyApp());
