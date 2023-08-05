@@ -22,7 +22,7 @@ class SpeechToTextGoogle {
           await _platform.invokeMethod('showSpeechToTextDialog');
       _listener ??= _stream.receiveBroadcastStream().listen(onTextReceived);
       return result ?? false;
-    } on PlatformException catch (e) {
+    } on PlatformException {
       return false;
     }
   }
