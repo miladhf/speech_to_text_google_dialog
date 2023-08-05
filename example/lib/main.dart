@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:speech_to_text_google_dialog/speech_to_text_google.dart';
+import 'package:speech_to_text_google_dialog/speech_to_text_google_dialog.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,8 +46,9 @@ class _HomeState extends State<Home> {
                     ))),
             ElevatedButton(
               onPressed: () async {
-                bool isServiceAvailable = await SpeechToTextGoogle.getInstance()
-                    .showGoogleDialog(onTextReceived: (data) {
+                bool isServiceAvailable =
+                    await SpeechToTextGoogleDialog.getInstance()
+                        .showGoogleDialog(onTextReceived: (data) {
                   setState(() {
                     result = data.toString();
                   });

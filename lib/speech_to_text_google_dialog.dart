@@ -1,17 +1,17 @@
-library speech_to_text_google;
+library speech_to_text_google_dialog;
 
 import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class SpeechToTextGoogle {
-  static SpeechToTextGoogle? _instance;
+class SpeechToTextGoogleDialog {
+  static SpeechToTextGoogleDialog? _instance;
   final EventChannel _stream = const EventChannel('SpeechToTextGoogleStream');
   final _platform = const MethodChannel('SpeechToTextGoogleChannel');
   StreamSubscription? _listener;
 
-  static SpeechToTextGoogle getInstance() {
-    _instance ??= SpeechToTextGoogle();
+  static SpeechToTextGoogleDialog getInstance() {
+    _instance ??= SpeechToTextGoogleDialog();
     return _instance!;
   }
 
