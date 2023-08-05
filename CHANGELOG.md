@@ -1,3 +1,7 @@
+## 0.0.3
+
+* code documentation improved.
+
 ## 0.0.2
 
 * package class renamed.
