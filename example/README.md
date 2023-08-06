@@ -1,6 +1,6 @@
 # speech_to_text_google_example
 
-Demonstrates how to use the speech_to_text_google plugin.
+Demonstrates how to use the speech_to_text_google_dialog plugin.
 
 ## Getting Started
 

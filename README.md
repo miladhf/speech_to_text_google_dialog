@@ -3,7 +3,7 @@
 This package is implemented to display the Google speech to text dialog. There is no need to get any
 permission from the user for this. This package is currently available on Android.
 
-![DemoAndroid](https://github.com/miladhf/speech_to_text_google/blob/master/example/screenshots/example_android.gif)
+![DemoAndroid](https://github.com/miladhf/speech_to_text_google_dialog/blob/master/example/screenshots/example_android.gif)
 
 ## Usage
 
