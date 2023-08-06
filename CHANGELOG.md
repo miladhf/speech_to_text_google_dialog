@@ -1,3 +1,7 @@
+## 0.0.4
+
+* repository name changed.
+
 ## 0.0.3
 
 * code documentation improved.
