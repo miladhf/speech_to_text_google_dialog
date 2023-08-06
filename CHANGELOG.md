@@ -1,3 +1,7 @@
+## 0.0.5
+
+* The gif url changed in README.md.
+
 ## 0.0.4
 
 * repository name changed.
