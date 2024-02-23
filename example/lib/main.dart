@@ -48,11 +48,14 @@ class _HomeState extends State<Home> {
               onPressed: () async {
                 bool isServiceAvailable =
                     await SpeechToTextGoogleDialog.getInstance()
-                        .showGoogleDialog(onTextReceived: (data) {
-                  setState(() {
-                    result = data.toString();
-                  });
-                });
+                        .showGoogleDialog(
+                  onTextReceived: (data) {
+                    setState(() {
+                      result = data.toString();
+                    });
+                  },
+                  // locale: "en-US",
+                );
                 if (!isServiceAvailable) {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                     content: const Text('Service is not available'),

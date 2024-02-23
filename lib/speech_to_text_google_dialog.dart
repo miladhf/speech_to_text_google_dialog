@@ -18,12 +18,15 @@ class SpeechToTextGoogleDialog {
 
   ///This function showing the Google speech to text dialog
   ///This function returns a boolean value that indicates service availability
+  ///You can pass a [locale] to change the language of the dialog. e.g. 'en-US'
   Future<bool> showGoogleDialog(
-      {required Function(dynamic data) onTextReceived}) async {
+      {required Function(dynamic data) onTextReceived, String? locale}) async {
     try {
       //call platform specific function
       final bool? result =
-          await _platform.invokeMethod('showSpeechToTextDialog');
+          await _platform.invokeMethod('showSpeechToTextDialog', {
+        'locale': locale,
+      });
       //passing the received text to [onTextReceived] function
       _stream.receiveBroadcastStream().listen(onTextReceived);
       return result ?? false;
