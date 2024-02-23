@@ -14,5 +14,7 @@ This example shows how to display a google speech to text dialog and get the res
 ```dart
 bool isServiceAvailable = await SpeechToTextGoogle.getInstance()
                     .showGoogleDialog(onTextReceived: (data) {
-                });
+                },
+                  // locale: "en-US",
+);
 ```
