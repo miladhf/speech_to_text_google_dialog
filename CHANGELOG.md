@@ -1,3 +1,7 @@
+## 0.0.6
+
+* The locale argument added to showGoogleDialog method .
+
 ## 0.0.5
 
 * The gif url changed in README.md.
